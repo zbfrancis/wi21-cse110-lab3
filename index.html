@@ -31,14 +31,14 @@
 			</section>
 			
 			<pre>This is some pre-text. Not really sure what this does.</pre>
-			
-			<ul>
-  			<li>This</li>
-  			<li>is</li>
-  			<li>a</li>
-				<li>list.</li>
-			</ul>
-			
+			<template>
+				<ul>
+					<li>This</li>
+					<li>is</li>
+					<li>a</li>
+					<li>list.</li>
+				</ul>
+			</template>
 			<ol>
   			<li>This</li>
   			<li>is</li>
@@ -62,13 +62,109 @@
   			<source src="howl.mp3" type="audio/mpeg">
   			Your browser does not support the audio tag.
 			</audio>
+			
+			<br>
+
+			<iframe src="https://zbfrancis.github.io/" title="My Markdown Page"></iframe>
+			<div>This my Markdown GitHub website. ^</div>
+			
 			<br>
 			
-			<iframe src="https://zbfrancis.github.io/" title="W3Schools Free Online Web Tutorials"></iframe>
+			<figure>
+				<video width="320" height="240" controls>
+					<source src="puppy.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				<figcaption>This is a video of a puppy.</figcaption>
+			</figure>
 			
+			<svg width="300" height="200">
+  			<polygon points="100,10 40,198 190,78 10,78 160,198"
+  			style="fill:lime;stroke:blue;stroke-width:5;fill-rule:evenodd;" />
+			</svg>
+			<br>
+			<br>
+			<table style="width:15%">
+  			<caption>This website in a Table.</caption>
+				<colgroup>
+					<col span="2" style="background-color:yellow">
+				</colgroup>
+  			<tr>
+					<th>Code Type</th>
+					<th>%</th>
+				</tr>
+				<tr>
+					<td>HTML</td>
+					<td>100%</td>
+				</tr>
+				<tr>
+					<td>All Other Languages</td>
+					<td>0%</td>
+				</tr>
+			</table>
+			<br>
+			<div>
+				<form>
+					<fieldset>
+						<legend>Make an Account:</legend>
+						<label for="name">Name:</label><br>
+						<input type="text" id="name" name="name"><br>
+						<label for="today">Birthday:</label><br>
+						<input type="date" id="today" name="today"><br>
+						<label for="email">Email:</label><br>
+						<input type="email" id="email" name="email"><br>
+						<label for="pass">Password:</label><br>
+						<input type="password" id="pass" name="pass"><br>
+						<input type="submit" value="Submit"><br>
+					</fieldset>
+				</form>
+				
+				<button type="button">Click Me! I'm a button!</button>
+				<label>Clickable Image:</label><br>
+				<input type="image" src="clickme.png" style="width:10%"><br>
+				<label>Color:</label><br>
+				<input type="color"><br>
+				<label>Click ME!</label>
+				<input type="radio"><br>
+				<label>You can also check me off!</label>
+				<input type="checkbox"> <br>
+				<label>Slider</label><br>
+				<input type="range"><br>
+				
+				<label for="fav">Choose your favorite School:</label>
+				<select  name="fav" id="fav">
+					<optgroup label="San Diego">
+						<option value="UCSD">UCSD</option>
+						<option value="SDSU">SDSU</option>
+					</optgroup>
+					<optgroup label="Bay Area">
+						<option value="berkeley">UC Berkeley</option>
+						<option value="stanford">Stanford</option>
+					</optgroup>
+				</select>
+			</div>
+			<br>
+			<label for="review">Review of this page:</label><br>
+			<textarea id="review" name="review" rows="4" cols="50">This page really sucks but it's ok because I'm new to HTML.
+				3/10
+			</textarea>
+			<br>
 			
-			
-			
+			<label for="ratings">Choose your rating:</label>
+			<input list="rating" name="ratings" id="ratings">
+
+			<datalist id="rating">
+				<option value="10/10">
+				<option value="9/10">
+				<option value="9.5/10">
+				<option value="11/10">
+				<option value="9.9/10">
+			</datalist>
+			<br>
+			<details>
+				<summary>In Summary</summary>
+				<p>This page isn't bad, just random.</p>
+			</details>
 		</main>
 		
 		<footer>
